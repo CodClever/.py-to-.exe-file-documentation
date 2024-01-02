@@ -1,0 +1,272 @@
+						* CONVERT A .py FILE INTO AN .exe FILE *
+						* CREATE A SETUP FILE FOR YOUR .exe FILE *
+
+
+* What this .txt file contains :-
+
+1.) Shows in detain that  -  How to convert a .py file into an .exe file.
+
+2.) Shows in deatil that  -  How to convert a setup file for your .exe file.
+
+
+
+* Source of information  =  From the original youtube video i.e. https://www.youtube.com/watch?v=p3tSLatmGvU. *
+* Special Thanks to  -  @PythonSimplified *
+* Writer and creator of this file  -  Arinjay Kumar *
+
+
+You've just made a beautiful GUI app with Python - but there's a big difference between creating an app for your personal use and distributing it all across the web, reaching many people who don't necessarily know anything about Python. 
+In this tutorial, I will show you exactly how to convert your Tkinter, Kivy, KivyMD, PyQT5, or other GUIs into a full-blown professional program! 🤩🤩🤩
+The end result is a 😱 SINGLE SETUP FILE 😱 which anyone can download and install on their computer - even your grandmom!!! 👵
+We will use Pyinstaller to create an executable file and Inno Setup to bundle it with dependencies and convert them into a setup wizard. 
+In addition, we will discuss some common errors, how to fix them and how to avoid irrelevant instructions (hint: do we really need to modify the SPEC file? 🤔)
+We will briefly tackle licensing (open source, as you may guess 😉), and generating icons.
+Please note, this video is designed for Windows developers and users! However, I will cover Linux and Mac as well in some future tutorials... the Mac tutorial is of course inspired by Tom! XDD (but only members of our Discord community will understand the joke, this is how I test if they read video descriptions 😅) 
+
+
+This is an very extensive, deep and detail information created by me  -  Arinjay Kumar.
+This took me a lot of hours.
+This was a very painful and time taking thing project.
+
+
+
+
+For converting .py file to an .exe(executable file).
+* Includes the way for making your own setup process for your .exe file *
+Please follow the instructions carefully and properly:-
+
+VENV Alternatives :-
+$ python3 -m venv name_of_my_env
+$ source name_of_my_env/bin/activate
+
+* IMPORTANT LINKS * :-
+
+Link to the original source  :  https://www.youtube.com/watch?v=p3tSLatmGvU
+Random Recipe Picker Repository  :  https://github.com/MariyaSha/RandomRecipePicker
+Resource Path Function (Stack Overflow)  :  https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+PNG to ICO Icon Converter : https://image.online-convert.com/convert-to-ico
+Inno Setup  :  https://jrsoftware.org/isinfo.php
+Open Source Initiative MIT License  :  https://opensource.org/license/mit/
+
+
+Point to note :-
+* There may be some or many problems or issues related to information, etc. in this .txt file.
+* There are popularly two methods for conveting .py file to .exe file, that is :- *
+
+
+1.) PYINSTALLER (Jokingly known as  -  Mother of Auto Py)
+
+2.) Auto Py
+
+
+* USING PYINSTALLER METHOD *
+* Requires you to have pip already installed on your computer. *
+* As per a windows user * 
+* May work in MAC or LINUX, etc *
+* Not tested *
+* It will work properly even if the .py file has - python app, sqlite DB(Database), .png images, tt fonts etc and .py packages like - Tkinter, Kivy, KivyMD, PyQT5, or other GUI packages.
+* Highly not recommended for business. *
+* Only recommended for personal use. *
+* Any loss of information, theft, damage, or any other issue or problem happens, we are not responsible for it. *
+
+For installing pip on your personal computer:-
+
+Link  :-
+
+https://www.youtube.com/watch?v=c_qNC1lL4qA
+
+
+
+Steps for converting .py to .exe:-
+
+
+
+1.) Run terminal or powershell or cmd.
+
+
+2.) Write  -  pip install pyinstaller.
+
+
+
+
+* Continue if you have images or database in your .py file. (SKIP TO STEP NUMBER  -  9) *
+
+					"OR"
+
+* Continue if you want to make your .py to .exe file conversion be in the best way. *
+
+
+
+
+3.) Press "ENTER" key on your keyboard.
+
+
+4.) Copy this code and paste it at top of your .py's code or below all of your imports:-
+
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+
+5.) * IMPORTANT NOTE *
+
+* EXCEPTION *
+If there is a issue or problem which you are facing in which, you are using an Alienware device or etc.
+Do the given instructions below:-
+
+In the code on step number - 4, find - base_path = sys._MEIPASS - and replace this with - base_path = sys._MEIPASS2.
+
+
+If there is a issue or problem which you are facing, in there is an error like - hiddenimports or ImportError: No module named my_module  FIXED WITH: hiddenimports=[my_module], - then please do this:-
+
+Add a line of code on the next line of step number - 4, which is :-
+
+* From the Stack Overflow link at the starting of this .txt file, i.e. https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file. *
+
+a.datas += [('Logo.png','C:\\Users\\elu\\PycharmProjects\\Prosjektet\\Forsok splitting\\Logo.png', 'Data')]
+
+
+6.) Write the following code in the top of your .py file :-
+import sys
+import os
+
+
+7.) Any external file (like :- images, etc), then write this code at the first of your external file location:-
+For Example :-
+(resource_path(* Your external file location here *))
+
+						"AND"
+
+Change all of your external links in this way :- 
+
+For Example  -  assets\\image.png
+
+
+8.) If you have a logo for your .py file then follow the given instrucions below :-
+
+Kindly please go to the following link given below :-
+
+https://image.online-convert.com/convert-to-ico
+
+Now, convert your logo with this website and save the .ico file in your folder in which you have stored or the root of your .py file.
+
+Kindly, please rename your .ico file to  -  icon.ico. (Optional)
+
+
+9.) Kindly, please go to your location or root of your .py file.
+
+
+10.) Cut all of your assets, fonts and data.{In short, all of your data except your .py file.}
+
+
+11.) Paste all of it in the dist folder when you have succesfully converted your .py file to .exe file.
+
+
+12.) Run terminal or powershell or cmd.
+
+
+13.) Locate to your location or root of your .py file using cd command {In Microsoft Windows} or else.
+
+
+14.) Write  -  pyinstaller --name {Your preferred name} --onefile {Produces your .py to .exe in a less messy directory} --windowed OR --noconsole{Makes your .exe file in only in GUI(Graphical User Interface) format.(Optional)} --icon=icon.ico{Or your own logo file name} {Write your .py file name here}
+
+Clean version of the above  -  pyinstaller --name Example --onefile --windowed --icon=icon.ico Example
+
+
+15.) Now, do the work in step number 9 to 11.
+
+
+16.) Now, again do step number 14.
+
+
+17) It is succesfull! You are ready to use your .exe file.
+
+
+18) For using it, go to the location or root of your .py file and you will see two files, one named build and the other one named dist. You have to open the dist folder. Now locate your .exe file.
+
+
+19) Open it and Enjoy!
+
+
+
+
+
+
+Following are the steps for converting your .exe file to an setup file :-
+
+
+
+1.) Install Inno from the following link :-
+https://jrsoftware.org/isinfo.php
+
+
+2.) * Inno is made for both commercial user and non-commercial use. *
+For more information about Inno, please visit :-
+https://jrsoftware.org/isinfo.php
+
+
+3.) Kindly, please lauch Inno setup.
+
+
+4.) Please carefully go through the setup process.
+
+
+5.) When you reach till the license part, stop and follow the instructions from here.
+
+
+6.) Open your browser, search  -  https://opensource.org/license/mit/.
+
+
+7.) Copy the open source initiative Approved MIT License® on the website. Please save it in a new text file and do the required changes.
+
+Required changes :-
+
+1.) Change the year in the new text file.
+
+2.) Change the copyright holder in the new text file.
+
+* IMPORTANT NOTE * :-
+
+Kindly, please change the information written according to your authorization of copyright. If you have any restrictions or copyright rights or authorised rights than you can write the proper information according to it and if you do not have any copyright rights or authorised rights or restricions than you can write the proper information according to it. This is a legal document and you have to write all of the information properly and please do indepth research if you have any copyright rights or authorised rights or restrictions. Please do proper research.
+
+
+8.) Cut the new text file and paste the file on the location or root of your .exe file.
+
+
+9.) Paste the new license text file in the Inno setup.
+
+
+* Following steps is for those people whose .exe has subfolders in their distribution directory. Others can continue their setup and continue from step number 15. *
+
+
+10.) Continue through the process until you reach the part where it say  -  Inno Setup Compilier, stop here.
+
+
+11.) Close the window. You will see an file or an asset directory for Inno named as Inno Setup Compilier {version name}.
+
+
+12.) Scroll down until you find the Files section, stop here.
+
+
+13.) On the Files section, find DestDir(Destination Directory). Change the DestDir location in the corredt way and fix it properly.
+
+For Example :-
+Source: "C:\Users\Users\dist\assets\*"; DestDir: "{app}/assets".
+
+
+14.) Save the file in your preferred location. Compile this file. This file can come in use in some time so it is recommended to save it.
+
+
+15.) To open your setup file for your .exe file, open the parent directory of the location or the root of the .exe file.
+
+
+16.) You will see a new folder for your .exe setup file has been created. Open this new folder. There you will see your .exe setup file. Open it.
+
+
+17.) Enjoy!
