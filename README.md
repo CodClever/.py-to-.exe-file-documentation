@@ -1,16 +1,11 @@
-# Zodiac
-
-About Zodiac: (A project by Arinjay Kumar)
-
-Welcome to Zodiac AI, where innovation meets intelligence in the digital realm! At Zodiac AI, we believe in the transformative power of artificial intelligence, ushering in a new era of possibilities.
-
+# .py-to-.exe-file-documentation
 
 
 						* CONVERT A .py FILE INTO AN .exe FILE *
 						* CREATE A SETUP FILE FOR YOUR .exe FILE *
 
 
-* What this .txt file contains :-
+* What this readme file contains :-
 
 1.) Shows in detain that  -  How to convert a .py file into an .exe file.
 
@@ -22,6 +17,8 @@ Welcome to Zodiac AI, where innovation meets intelligence in the digital realm! 
 * Special Thanks to  -  @PythonSimplified *
 * Writer and creator of this file  -  Arinjay Kumar *
 
+
+Description on the youtube video: 
 
 You've just made a beautiful GUI app with Python - but there's a big difference between creating an app for your personal use and distributing it all across the web, reaching many people who don't necessarily know anything about Python. 
 In this tutorial, I will show you exactly how to convert your Tkinter, Kivy, KivyMD, PyQT5, or other GUIs into a full-blown professional program! 🤩🤩🤩
@@ -58,7 +55,7 @@ Open Source Initiative MIT License  :  https://opensource.org/license/mit/
 
 
 Point to note :-
-* There may be some or many problems or issues related to information, etc. in this .txt file.
+* There may be some or many problems or issues related to information, etc. in this readme file.
 * There are popularly two methods for conveting .py file to .exe file, that is :- *
 
 
@@ -82,5 +79,13 @@ For installing pip on your personal computer:-
 Link  :-
 
 https://www.youtube.com/watch?v=c_qNC1lL4qA
+
+
+About Zodiac: (A project by Arinjay Kumar)
+
+Welcome to Zodiac AI, where innovation meets intelligence in the digital realm! At Zodiac AI, we believe in the transformative power of artificial intelligence, ushering in a new era of possibilities.
+																-  Arinjay Kumar
+
+  										©️ Copyright 2024 Arinjay Kumar    All rights reserved.
 
 
