@@ -15,7 +15,7 @@
 
 * Source of information  =  From the original youtube video i.e. https://www.youtube.com/watch?v=p3tSLatmGvU. *
 * Special Thanks to  -  @PythonSimplified *
-* Writer and creator of this file  -  Arinjay Kumar *
+* Writer and creator of this file  -  CodClever *
 
 
 Description on the youtube video: 
@@ -29,9 +29,9 @@ We will briefly tackle licensing (open source, as you may guess 😉), and gener
 Please note, this video is designed for Windows developers and users! However, I will cover Linux and Mac as well in some future tutorials... the Mac tutorial is of course inspired by Tom! XDD (but only members of our Discord community will understand the joke, this is how I test if they read video descriptions 😅) 
 
 
-This is an very extensive, deep and detail information created by me  -  Arinjay Kumar.
-This took me a lot of hours.
-This was a very painful and time taking thing project.
+This is an very extensive, deep and detail information created by me  -  CodClever.
+This took me a lot of time to make.
+This was a very painful and time taking project.
 
 
 
@@ -80,12 +80,6 @@ Link  :-
 
 https://www.youtube.com/watch?v=c_qNC1lL4qA
 
-
-About Zodiac: (A project by Arinjay Kumar)
-
-Welcome to Zodiac AI, where innovation meets intelligence in the digital realm! At Zodiac AI, we believe in the transformative power of artificial intelligence, ushering in a new era of possibilities.
-																-  Arinjay Kumar
-
-  										©️ Copyright 2024 Arinjay Kumar    All rights reserved.
+  								
 
 
